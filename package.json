@@ -1,6 +1,6 @@
 {
   "name": "@convex-dev/crons",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Convex component for scheduling periodic jobs.",
   "keywords": [
     "convex",
