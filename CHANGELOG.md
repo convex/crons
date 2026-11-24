@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.4
+
+### Patch Changes
+
+- Return the registered component API from the test registration helper.
+  ([#82](https://github.com/convex/crons/issues/82))
+
 ## 0.2.3
 
 - Updates the /test entrypoint for compatibility with convex-test's new
