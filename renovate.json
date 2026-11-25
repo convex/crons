@@ -24,9 +24,24 @@
       "automerge": false
     },
     {
+      "description": "Only automerge dev majors exercised by the required Test and lint check",
       "matchManagers": ["npm"],
       "matchDepTypes": ["devDependencies"],
       "matchUpdateTypes": ["major"],
+      "matchPackageNames": [
+        "@convex-dev/eslint-plugin",
+        "@edge-runtime/vm",
+        "@eslint/js",
+        "@types/node",
+        "convex-test",
+        "eslint",
+        "eslint-plugin-react-hooks",
+        "eslint-plugin-react-refresh",
+        "globals",
+        "typescript",
+        "typescript-eslint",
+        "vitest"
+      ],
       "automerge": true
     }
   ],
