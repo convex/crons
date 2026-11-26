@@ -2,7 +2,6 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:best-practices"],
   "timezone": "America/Los_Angeles",
-  "platformAutomerge": false,
   "minimumReleaseAge": "14 days",
   "lockFileMaintenance": {
     "schedule": ["at any time"],
@@ -24,9 +23,24 @@
       "automerge": false
     },
     {
+      "description": "Only automerge dev majors exercised by the required Test and lint check",
       "matchManagers": ["npm"],
       "matchDepTypes": ["devDependencies"],
       "matchUpdateTypes": ["major"],
+      "matchPackageNames": [
+        "@convex-dev/eslint-plugin",
+        "@edge-runtime/vm",
+        "@eslint/js",
+        "@types/node",
+        "convex-test",
+        "eslint",
+        "eslint-plugin-react-hooks",
+        "eslint-plugin-react-refresh",
+        "globals",
+        "typescript",
+        "typescript-eslint",
+        "vitest"
+      ],
       "automerge": true
     }
   ],
